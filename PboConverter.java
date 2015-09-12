@@ -61,9 +61,10 @@ class PboConverter {
                 scanInput.nextLine();
             }
 
+            pressEnterToContinue();
             // 80 long separate character between looping
             // 80 is standard width of terminal
-            System.out.println("\n\n================================================================================\n");
+            System.out.println("\n===============================================================================\n");
         }
     }
 
@@ -110,5 +111,16 @@ class PboConverter {
         menuMap.put(4, new converter.RangeConverter());
         menuMap.put(5, new converter.TemperatureConverter());
         menuMap.put(6, new converter.CookingConverter());
+    }
+
+    private static void pressEnterToContinue()
+    {
+        System.out.println("\nTekan tombol enter untuk lanjut...");
+        try
+        {
+            System.in.read();
+        }
+        catch(Exception e)
+        {}
     }
 }
