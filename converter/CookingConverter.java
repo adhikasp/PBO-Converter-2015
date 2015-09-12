@@ -15,10 +15,10 @@ public class CookingConverter implements Converter
 	{
 		Scanner in = new Scanner(System.in);
 
-		System.out.print("convert from (teaspoon, tablespoon, or cup): ");
+		System.out.print("convert from (teaspoon, tablespoon, ml, or cup): ");
 		String fromUnit = in.nextLine();
 
-		System.out.print ("Convert to (teaspoon, tablespoon, or cup) : ");
+		System.out.print ("Convert to (teaspoon, tablespoon, ml, or cup) : ");
 		String toUnit = in.nextLine();
 
 		CookingCalculator from = new CookingCalculator(fromUnit);

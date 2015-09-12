@@ -14,6 +14,7 @@ class CookingCalculator
 	final private double TES_TO_ML = 4.928922;
 	final private double TAS_TO_ML = 14.786765;
 	final private double CUP_TO_ML = 250;
+	final private double ml_TO_ML = 1;
 
 	private double factor;
 
@@ -31,6 +32,10 @@ class CookingCalculator
 		else if (unit.equals("cup"))
 		{
 			factor = CUP_TO_ML;
+		}
+		else if (unit.equals("ml"))
+		{
+			factor = ml_TO_ML;
 		}
 	}
 
